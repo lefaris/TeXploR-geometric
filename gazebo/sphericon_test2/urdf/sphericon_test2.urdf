@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="sphericon_test2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.20405 0.10632 0.0014434"
+        rpy="0 0 0" />
+      <mass
+        value="0.6" />
+      <inertia
+        ixx="0.014903"
+        ixy="-0.00017119"
+        ixz="-4.2726E-06"
+        iyy="0.012259"
+        iyz="0.00018015"
+        izz="0.015118" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sphericon_test2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.76863 0.20784 0.15294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sphericon_test2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="motor1">
+    <inertial>
+      <origin
+        xyz="-0.037633 -0.079986 -0.019508"
+        rpy="0 0 0" />
+      <mass
+        value="0.402" />
+      <inertia
+        ixx="5.7974E-05"
+        ixy="-1.4016E-07"
+        ixz="-8.0839E-10"
+        iyy="3.1783E-05"
+        iyz="-5.5543E-11"
+        izz="8.6841E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sphericon_test2/meshes/motor1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.76863 0.20784 0.15294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sphericon_test2/meshes/motor1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mjoint1"
+    type="continuous">
+    <origin
+      xyz="0.22247 -0.0066 0.077904"
+      rpy="-1.5708 -0.37745 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="motor1" />
+    <axis
+      xyz="0 0 0" />
+    <dynamics
+      damping="1"
+      friction="1" />
+  </joint>
+  <link
+    name="motor2">
+    <inertial>
+      <origin
+        xyz="-0.00028322 0.015592 -0.010972"
+        rpy="0 0 0" />
+      <mass
+        value="0.402" />
+      <inertia
+        ixx="5.7974E-05"
+        ixy="-8.0839E-10"
+        ixz="1.4016E-07"
+        iyy="8.6841E-05"
+        iyz="5.5543E-11"
+        izz="3.1783E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sphericon_test2/meshes/motor2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.79608 0.79608 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sphericon_test2/meshes/motor2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mjoint2"
+    type="continuous">
+    <origin
+      xyz="0.13979 0.0011842 -0.11502"
+      rpy="-2.7113 -0.047594 1.549" />
+    <parent
+      link="base_link" />
+    <child
+      link="motor2" />
+    <axis
+      xyz="0 0 0" />
+    <dynamics
+      damping="1"
+      friction="1" />
+  </joint>
+</robot>

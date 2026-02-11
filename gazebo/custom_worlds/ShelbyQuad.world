@@ -1,0 +1,53 @@
+<!--
+  Lunar world
+  
+-->
+<?xml version="1.0" encoding="UTF-8" ?>
+<sdf version="1.4">
+  <world name="default">
+    <scene>
+      <ambient>1 1 1 1</ambient>
+      <background>0.5 0.5 0.5 1</background>
+      <shadows>false</shadows>
+    </scene>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <gravity>0 0 -9.81</gravity>
+    </physics>
+    <light type="directional" name="directional_light_1">
+      <pose>0 20 20 0 0.785400 0.785400</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>1 1 1 1</specular>
+      <attenuation>
+        <range>300</range>
+      </attenuation>
+      <direction>0.1 0.1 -1</direction>
+      <cast_shadows>false</cast_shadows>
+    </light>
+    <model name="landscape">
+      <link name="landscape_link">
+        <pose>0 0 0 0 0 0</pose>
+        <collision name="landscape_collision">
+          <geometry>
+            <mesh>
+	      <uri>file://ShelbyQuad/ShelbyQuad.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="landscape">
+          <geometry>
+            <mesh>
+	      <uri>file://ShelbyQuad/ShelbyQuad.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>true</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+  </world>
+</sdf>
