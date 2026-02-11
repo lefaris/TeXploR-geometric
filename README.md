@@ -134,10 +134,10 @@ If you use this work in your research, please cite:
 ---
 ## Updates
 
-**January 2026:** Updated [TeXploRV2](https://github.com/lefaris/TeXploR-quasi) paper accepted to IEEE ICRA 2026
-**May 2025:** Paper presented at IEEE ICRA 2025
-**December 2024:** Paper published in IEEE RA-L
-**October 2024:** Paper accepted to IEEE RA-L
+- **January 2026:** Updated [TeXploRV2](https://github.com/lefaris/TeXploR-quasi) paper accepted to IEEE ICRA 2026
+- **May 2025:** Paper presented at IEEE ICRA 2025
+- **December 2024:** Paper published in IEEE RA-L
+- **October 2024:** Paper accepted to IEEE RA-L
 
 ---
 ## License
