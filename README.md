@@ -43,17 +43,17 @@ TeXploR-geometric/
 ├── design files/           # CAD files for TeXploR components
 │   └── PCBs/               # PCB .brd and .sch files
 ├── experiments/            # C++ test scripts and experimental data
-│   └── lab_cam_view/       # Overhead view of experiments
+│   ├── lab_cam_view/       # Overhead view of experiments
 │   └── Lauren_cam_view/    # Side view of experiments
 ├── figure generation/      # MATLAB scripts for generating figures
 │   └── simulation figures/ # 4-state static eequilibrium simulations
 ├── gazebo/                 # Gazebo simulation files and launch scripts
-│   └── custom_worlds/      # World and Launch files
-│       └── ShelbyQuad/     # DAE and texture files for custom world
+│   ├── custom_worlds/      # World and Launch files
+│   │   └── ShelbyQuad/     # DAE and texture files for custom world
 │   └── sphericon_test2/    # URDF, launch, config, and mesh files
-│       └── config/
-│       └── launch/
-│       └── meshes/
+│       ├── config/
+│       ├── launch/
+│       ├── meshes/
 │       └── urdf/
 ├── geometric modeling/     # Core geometric modeling MATLAB code
 │   └── FixingNonvalidVals  # Checking for nonpositive force values
